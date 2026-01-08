@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa Satelital UTM → KML</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Proj4 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.9.0/proj4.js"></script>
+
+  <!-- KML -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tokml/0.4.0/tokml.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h3>Mapa Satelital – Coordenadas UTM (WGS84)</h3>
+  <button onclick="irAMiUbicacion()">📍 Mi ubicación</button>
+  <button onclick="exportarKML()">Exportar KML</button>
+  <span id="utm"></span>
+</header>
+
+
+<div id="map"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

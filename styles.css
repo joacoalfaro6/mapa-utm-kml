@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 8px;
+  background: #1e1e1e;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#utm {
+  margin-left: auto;
+  font-size: 0.9em;
+}
+
+#map {
+  height: calc(100vh - 50px);
+}
